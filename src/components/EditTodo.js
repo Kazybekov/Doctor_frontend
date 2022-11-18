@@ -11,7 +11,7 @@ const EditTodo = ({ todo }) => {
     try {
       const body = { degree };
       const response = await fetch(
-        `http://localhost:5000/doctor/${todo.email}`,
+        `https://dbassignment-bonus-back.onrender.com/doctor/${todo.email}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

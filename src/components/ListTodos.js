@@ -9,7 +9,7 @@ const ListTodos = () => {
 
   const deleteTodo = async email => {
     try {
-      const deleteTodo = await fetch(`http://localhost:5000/doctor/${email}`, {
+      const deleteTodo = await fetch(`https://dbassignment-bonus-back.onrender.com/doctor/${email}`, {
         method: "DELETE"
       });
 
@@ -21,7 +21,7 @@ const ListTodos = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/doctor");
+      const response = await fetch("https://dbassignment-bonus-back.onrender.com/doctor");
       const jsonData = await response.json();
 
       setdoctor(jsonData);
