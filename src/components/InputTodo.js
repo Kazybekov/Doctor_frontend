@@ -8,7 +8,7 @@ const InputTodo = () => {
     e.preventDefault();
     try {
       const body = { email,degree };
-      const response = await fetch("https://dbassignment-bonus-back.onrender.com/doctor", {
+      const response = await fetch("https://backend-doctor-nuedukz.herokuapp.com/doctor", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
