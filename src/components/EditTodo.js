@@ -11,7 +11,7 @@ const EditTodo = ({ todo }) => {
     try {
       const body = { degree };
       const response = await fetch(
-        `https://backend-doctor-nuedukz.herokuapp.com/${todo.email}`,
+        `https://backend-doctor-nuedukz.herokuapp.com/doctor/${todo.email}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
