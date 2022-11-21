@@ -37,12 +37,14 @@ const InputTodo = () => {
       <h1 className="text-center mt-5">Doctors List</h1>
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
         <input
+          placeholder="enter email"
           type="email"
           className="form-control"
           onChange={handleChange1}
           value={email}
         />
         <input
+          placeholder="enter degree"
           type="text"
           className="form-control-2"
           onChange={handleChange2}
